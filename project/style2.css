@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root{
+    --primarycolor:#fff;
+    --maintext : #07023f;
+    --secondarytext : #0796ef;
+    --btnhover : #07023f;
+}
+.dark-theme{
+    --primarycolor:#0796ef;
+    --maintext : #3b2be6;
+    --secondarytext : #fff;
+    --btnhover : #f008e0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'poppins';
+    background-color: var(--primarycolor);
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    padding: 20px 140px;
+}
+
+/* header section  */
+header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo{
+    color: var(--maintext);
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: var(--secondarytext);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.nav li a:hover{
+    color: var(--maintext);
+}
+.header-nav .nav  li a.active{
+    color: var(--maintext);
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--secondarytext);
+    background-color: var(--maintext);
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: var(--btnhover);
+}
+.header-nav {
+    width: 45%;
+}
+.header-btn{
+    display: inline-flex;
+}
+.header-btn .mode-change{
+    margin-left: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--secondarytext);
+}
+/* hero section  */
+
+.social-icon-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.social-icon-list li{
+    margin: 15px 0;
+}
+.social-icon-list li a{
+    font-size: 2rem;
+    color: var(--maintext);
+
+}
+.hero-section{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section .hero-content{
+    width: 40%;
+
+}
+
+.hero-section .hero-content .content-text{
+    font-size: 2rem;
+    color: var(--secondarytext);
+
+}
+.hero-section .hero-content .content-text span{
+    color: var(--maintext);
+}
+.hero-section .hero-content .hero-btn button{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.hero-section .hero-image{
+    width: 40%;
+}
+
+
+.hero-image img{
+    height: 70vh;
+}
+
+
+
+
+
+/*About ME PART*/
+.about-us {
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #ddd;
+}
+
+.pic {
+  float: left;
+  height: auto;
+  width: 302px;
+}
+
+.text {
+  float: right;
+  width: 540px;
+  margin-left: 20px; 
+  box-sizing: border-box; 
+}
+
+.text h2 {
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text h5 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #4070f4;
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.data {
+  margin-top: 30px;
+}
+
+.hire {
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.hire:hover {
+  background: #000;
+  border: 1px solid #4070f4;
+}
+
+.about {
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+  /*for skill*/
+  
+.h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 80px;
+  }
+ 
+  .skills-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+  }
+  
+  .skill {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .skill-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    height: 40px;
+    z-index: -1;
+    border-radius: 100px;
+    position: absolute;
+  }
+  
+  .skill-fill {
+    background: blue;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+  }
+  
+  .skill-percent {
+    font-size: 30px;
+  }
+  
+ 
+  
+   .html {
+    animation: html 2s;
+    width: 50%;
+  }
+  .css {
+    animation: css 2s;
+    width: 80%;
+  }
+  
+  .js {
+    animation: js 2s;
+    width: 70%;
+  }
+  
+  @keyframes html {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  
+  @keyframes css {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  
+  @keyframes js {
+    from {
+      width: 0;
+    }
+    to {
+      width: 70%;
+    }
+  }
+  
+    /*for project*/
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+  }
+
+  .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 400px;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  }
+
+  .card-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .card-description p {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+
+  .card-description button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  /*for footer*/
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f9fa;
+    height: 200px;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
